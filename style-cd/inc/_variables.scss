@@ -3,6 +3,20 @@
 $defaultFontSize: 20;
 
 // Ubuntu
+$ubuntu: 'Ubuntu';
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Light.eot');
+    src: url('../assets/fonts/Ubuntu/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Light.woff2') format('woff2'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Light.woff') format('woff'),
+        url('../assets/fonts/Ubuntu/Ubuntu-Light.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
 @font-face {
     font-family: 'Ubuntu';
     src: url('../assets/fonts/Ubuntu/Ubuntu-Regular.eot');
@@ -40,6 +54,8 @@ $defaultFontSize: 20;
 }
 
 // Lastica
+$lastica: 'Lastica';
+
 @font-face {
     font-family: 'Lastica';
     src: url('../assets/fonts/Lastica/Lastica.eot');
@@ -53,6 +69,8 @@ $defaultFontSize: 20;
 }
 
 // Venera
+$venera: 'Venera';
+
 @font-face {
     font-family: 'Venera';
     src: url('../assets/fonts/Venera/Venera500.eot');
@@ -107,4 +125,6 @@ $purple: #B48EAD;
 
 // -------- Transitions -------- //
 
-$ease: all 400ms ease-in-out;
+$ease: all 300ms ease-in-out;
+$smooth: all 500ms;
+$quick: all 200ms;

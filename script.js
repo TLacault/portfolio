@@ -22,3 +22,13 @@ function go_to_section(section) {
         behavior: 'smooth'
     });
 }
+
+
+const circle = document.querySelector('.circle_1');
+
+document.addEventListener('mousemove', (event) => {
+    const mouseX = event.clientX;
+    const mouseY = event.clientY;
+
+    circle.style.transform = `translate(${mouseX}px, ${mouseY}px) translate(-50%, -50%)`;
+});

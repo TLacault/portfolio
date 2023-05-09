@@ -1,0 +1,69 @@
+#navbar {
+    z-index: 10;
+    display: flex;
+    align-items: center;
+
+    position: fixed;
+    top: 2em;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 97%;
+    height: 8%;
+
+    background: rgba($white-3, 0.7);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid rgba($white-3, 0.5);
+    // box-shadow: 0px 0px 25px 10px rgba($black-4, 0.05);
+
+    .github_button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: fixed;
+        left: 1%;
+    }
+
+    #nav_buttons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        position: relative;
+        left: 2%;
+        // transform: translateX(-30%);
+        width: 60%;
+        height: 100%;
+
+        .home_button,
+        .about_button,
+        .project_button,
+        .skills_button,
+        .contact_button {
+            position: relative;
+            margin-left: 8%;
+
+            background: none;
+            border: none;
+            outline: none;
+
+            font-family: $ubuntu;
+            font-size: 2em;
+            font-weight: 400;
+            color: rgba($black-1, 1);
+
+            transition: $smooth;
+
+            &:hover {
+                cursor: pointer;
+                color: rgba($blue-2, 1);
+                text-shadow: 0px 0px 10px 5px rgba($blue-2, 0.5);
+                -webkit-text-stroke: 1px rgba($blue-2, 1);
+            }
+
+            white-space: nowrap;
+        }
+    }
+}

@@ -1,5 +1,12 @@
 @font-face {
   font-family: 'Ubuntu';
+  src: url("../assets/fonts/Ubuntu/Ubuntu-Light.eot");
+  src: url("../assets/fonts/Ubuntu/Ubuntu-Light.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Ubuntu/Ubuntu-Light.woff2") format("woff2"), url("../assets/fonts/Ubuntu/Ubuntu-Light.woff") format("woff"), url("../assets/fonts/Ubuntu/Ubuntu-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Ubuntu';
   src: url("../assets/fonts/Ubuntu/Ubuntu-Regular.eot");
   src: url("../assets/fonts/Ubuntu/Ubuntu-Regular.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Ubuntu/Ubuntu-Regular.woff2") format("woff2"), url("../assets/fonts/Ubuntu/Ubuntu-Regular.woff") format("woff"), url("../assets/fonts/Ubuntu/Ubuntu-Regular.ttf") format("truetype");
   font-weight: 500;
@@ -17,6 +24,27 @@
   src: url("../assets/fonts/Ubuntu/Ubuntu-Bold.eot");
   src: url("../assets/fonts/Ubuntu/Ubuntu-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Ubuntu/Ubuntu-Bold.woff2") format("woff2"), url("../assets/fonts/Ubuntu/Ubuntu-Bold.woff") format("woff"), url("../assets/fonts/Ubuntu/Ubuntu-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Lastica';
+  src: url("../assets/fonts/Lastica/Lastica.eot");
+  src: url("../assets/fonts/Lastica/Lastica.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Lastica/Lastica.woff2") format("woff2"), url("../assets/fonts/Lastica/Lastica.woff") format("woff"), url("../assets/fonts/Lastica/Lastica.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Venera';
+  src: url("../assets/fonts/Venera/Venera500.eot");
+  src: url("../assets/fonts/Venera/Venera500.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Venera/Venera500.woff2") format("woff2"), url("../assets/fonts/Venera/Venera500.woff") format("woff"), url("../assets/fonts/Venera/Venera500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap; }
+@font-face {
+  font-family: 'Venera';
+  src: url("../assets/fonts/Venera/Venera900.eot");
+  src: url("../assets/fonts/Venera/Venera900.eot?#iefix") format("embedded-opentype"), url("../assets/fonts/Venera/Venera900.woff2") format("woff2"), url("../assets/fonts/Venera/Venera900.woff") format("woff"), url("../assets/fonts/Venera/Venera900.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal;
   font-display: swap; }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -153,5 +181,121 @@ input:focus {
 
 input {
   appearance: none; }
+
+body {
+  background-color: #434C5E; }
+
+#background_home {
+  z-index: -1;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; }
+  #background_home .circle_1 {
+    position: fixed;
+    width: 3000px;
+    height: 3000px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #81a1c1, rgba(129, 161, 193, 0) 50%);
+    opacity: 0.8;
+    transition: all 500ms;
+    pointer-events: none; }
+  #background_home .rectangle_1,
+  #background_home .rectangle_2,
+  #background_home .rectangle_3 {
+    position: absolute;
+    border-radius: 100px;
+    background: #d8dee9;
+    transform: rotate(145deg);
+    box-shadow: 0px 0px 30px 15px #2e3440; }
+  #background_home .rectangle_1 {
+    top: -28em;
+    left: -65em;
+    width: 2000px;
+    height: 1500px; }
+  #background_home .rectangle_2 {
+    top: 55em;
+    left: -7em;
+    width: 2000px;
+    height: 1500px; }
+  #background_home .rectangle_3 {
+    top: -50em;
+    left: 88em;
+    width: 1500px;
+    height: 2000px; }
+
+#navbar {
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97%;
+  height: 8%;
+  background: rgba(236, 239, 244, 0.7);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 15px;
+  border: 2px solid rgba(236, 239, 244, 0.5); }
+  #navbar .github_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    left: 1%; }
+  #navbar #nav_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    left: 2%;
+    width: 60%;
+    height: 100%; }
+    #navbar #nav_buttons .home_button,
+    #navbar #nav_buttons .about_button,
+    #navbar #nav_buttons .project_button,
+    #navbar #nav_buttons .skills_button,
+    #navbar #nav_buttons .contact_button {
+      position: relative;
+      margin-left: 8%;
+      background: none;
+      border: none;
+      outline: none;
+      font-family: "Ubuntu";
+      font-size: 2em;
+      font-weight: 400;
+      color: #4c566a;
+      transition: all 500ms;
+      white-space: nowrap; }
+      #navbar #nav_buttons .home_button:hover,
+      #navbar #nav_buttons .about_button:hover,
+      #navbar #nav_buttons .project_button:hover,
+      #navbar #nav_buttons .skills_button:hover,
+      #navbar #nav_buttons .contact_button:hover {
+        cursor: pointer;
+        color: #81a1c1;
+        text-shadow: 0px 0px 10px 5px rgba(129, 161, 193, 0.5);
+        -webkit-text-stroke: 1px #81a1c1; }
+
+#home_section {
+  z-index: 1;
+  display: flex;
+  position: relative;
+  top: 10em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 97%; }
+  #home_section .home_avatar {
+    display: flex;
+    position: absolute;
+    left: 57em;
+    top: 20em;
+    width: 40em;
+    height: 40em;
+    -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
+    mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
 
 /*# sourceMappingURL=style.css.map */
