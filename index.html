@@ -14,20 +14,25 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/img/favicon/site.webmanifest">
+    <link rel="mask-icon" href="assets/img/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="assets/img/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="assets/img/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+
     <title>TL | Software Developer</title>
 </head>
 
 <body>
-    <div id="background_home">
-        <div class="circle_1"></div>
-        <div class="rectangle_1"></div>
-        <div class="rectangle_2"></div>
-        <div class="rectangle_3"></div>
-    </div>
+    <div class="main_background"></div>
 
     <nav id="navbar">
-        <a class="github_button" href="https://github.com/TLacault" target="_blank">
-            <img src="assets/img/github.png" alt="github" width="65" height="65" />
+        <a class="logo_button" href="https://github.com/TLacault" target="_blank">
+            <img src="assets/img/logo/logo_dark.png" alt="logo" width="65" height="65" />
         </a>
         <div id="nav_buttons">
             <button class="home_button" onclick="go_to_section('body')">Home</button>
@@ -38,17 +43,40 @@
         </div>
     </nav>
 
-    <section id="home_section">
-        <!-- <p class="p1">Hi, I'm Tim Lacault,</p>
-        <p class="p2">Software Developer</p>
-        <p class="p3">
-            Computer Science student passionate about system<br>
-            design, automation scripts and UNIX customization.
-        </p> -->
+    <!-- Home Section -->
 
-        <!-- <a class="project_button" href="https://github.com/TLacault?tab=repositories" target="_blank">View Projects</a> -->
+    <div id="home_background">
+        <div class="home_cir_1"></div>
+        <div class="home_rect_1"></div>
+        <div class="home_rect_2"></div>
+        <div class="home_rect_3"></div>
+    </div>
+
+    <section id="home_section">
+        <div class="home_intro">
+            <p class="home_p1">Hi, I'm Tim Lacault</p>
+            <p class="home_p2">Software Developer</p>
+            <p class="home_p3">
+                Passionate computer science student actively seeking<br>
+                a software development internship opportunity.
+            </p>
+            <button class="home_contact" onclick="go_to_section('contact_section')">Contact Me</button>
+        </div>
 
         <img class="home_avatar" src="assets/img/avatar.png" alt="Avatar" width="650" height="650">
+    </section>
+
+    <!-- About Section -->
+
+    <div id="about_background">
+        <div class="about_rect_1"></div>
+    </div>
+
+    <section id="about_section">
+        <div class"about">
+            <p class="about_title">About Me</p>
+            <p class="about_text">Text</p>
+        </div>
     </section>
 
     <script type="text/javascript" src="script.js"></script>

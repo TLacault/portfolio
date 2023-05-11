@@ -182,70 +182,52 @@ input:focus {
 input {
   appearance: none; }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden; }
+
+html::-webkit-scrollbar {
+  display: none; }
+
 body {
   background-color: #434C5E; }
 
-#background_home {
-  z-index: -1;
-  align-items: center;
-  position: absolute;
+.main_background {
+  z-index: -5;
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
-  overflow-x: hidden; }
-  #background_home .circle_1 {
-    position: fixed;
-    width: 3000px;
-    height: 3000px;
-    border-radius: 50%;
-    background: radial-gradient(circle at center, #81a1c1, rgba(129, 161, 193, 0) 50%);
-    opacity: 0.8;
-    transition: all 500ms;
-    pointer-events: none; }
-  #background_home .rectangle_1,
-  #background_home .rectangle_2,
-  #background_home .rectangle_3 {
-    position: absolute;
-    border-radius: 100px;
-    background: #d8dee9;
-    transform: rotate(145deg);
-    box-shadow: 0px 0px 30px 15px #2e3440; }
-  #background_home .rectangle_1 {
-    top: -28em;
-    left: -65em;
-    width: 2000px;
-    height: 1500px; }
-  #background_home .rectangle_2 {
-    top: 55em;
-    left: -7em;
-    width: 2000px;
-    height: 1500px; }
-  #background_home .rectangle_3 {
-    top: -50em;
-    left: 88em;
-    width: 1500px;
-    height: 2000px; }
+  background: #434c5e;
+  transition: all 500ms; }
 
 #navbar {
   z-index: 10;
   display: flex;
   align-items: center;
   position: fixed;
-  top: 2em;
+  top: 2%;
   left: 50%;
   transform: translateX(-50%);
-  width: 97%;
+  width: 98%;
   height: 8%;
   background: rgba(236, 239, 244, 0.7);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(15px);
+  box-shadow: 0px 0px 25px 10px rgba(46, 52, 64, 0.05);
   border-radius: 15px;
-  border: 2px solid rgba(236, 239, 244, 0.5); }
-  #navbar .github_button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid rgba(236, 239, 244, 0.35); }
+  #navbar .logo_button {
     position: fixed;
-    left: 1%; }
+    left: 1%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 25px 10px rgba(46, 52, 64, 0.05); }
+    #navbar .logo_button img {
+      max-width: 100%;
+      max-height: 100%;
+      border-radius: 10px;
+      pointer-events: none; }
   #navbar #nav_buttons {
     display: flex;
     align-items: center;
@@ -280,22 +262,130 @@ body {
         text-shadow: 0px 0px 10px 5px rgba(129, 161, 193, 0.5);
         -webkit-text-stroke: 1px #81a1c1; }
 
+#home_background {
+  z-index: -1;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 90em;
+  overflow: hidden; }
+  #home_background .home_cir_1 {
+    position: fixed;
+    width: 3000px;
+    height: 3000px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #81a1c1, rgba(129, 161, 193, 0) 50%);
+    opacity: 0.8;
+    transition: all 500ms;
+    pointer-events: none; }
+  #home_background .home_rect_1,
+  #home_background .home_rect_2,
+  #home_background .home_rect_3 {
+    position: absolute;
+    border-radius: 100px;
+    background: #d8dee9;
+    transform: rotate(145deg);
+    box-shadow: 0px 0px 30px 15px #2e3440; }
+  #home_background .home_rect_1 {
+    top: -28em;
+    left: -65em;
+    width: 2000px;
+    height: 1500px; }
+  #home_background .home_rect_2 {
+    top: 55em;
+    left: -7em;
+    width: 2000px;
+    height: 1500px; }
+  #home_background .home_rect_3 {
+    top: -50em;
+    left: 88em;
+    width: 1500px;
+    height: 2000px; }
+
 #home_section {
   z-index: 1;
   display: flex;
-  position: relative;
+  position: absolute;
   top: 10em;
   left: 50%;
   transform: translateX(-50%);
-  width: 97%; }
+  width: 98%; }
+  #home_section .home_intro {
+    position: relative;
+    top: 5em;
+    left: 9%; }
+    #home_section .home_intro .home_p1 {
+      line-height: 1.5em;
+      font-family: "Ubuntu";
+      font-size: 4em;
+      font-weight: 700;
+      color: #434C5E; }
+    #home_section .home_intro .home_p2 {
+      font-family: "Ubuntu";
+      font-size: 4em;
+      font-weight: 700;
+      color: #5E81AC; }
+    #home_section .home_intro .home_p3 {
+      position: relative;
+      top: 0.8em;
+      line-height: 1.5em;
+      font-family: "Ubuntu";
+      font-size: 1.7em;
+      font-weight: 400;
+      color: rgba(76, 86, 106, 0.7); }
+    #home_section .home_intro .home_contact {
+      position: relative;
+      top: 2em;
+      left: 0;
+      width: 8em;
+      height: 2em;
+      background-color: transparent;
+      border: 2px solid #81a1c1;
+      border-radius: 10px;
+      font-family: "Ubuntu";
+      font-size: 2em;
+      font-weight: 600;
+      white-space: nowrap;
+      text-align: center;
+      color: #81a1c1;
+      transition: all 500ms; }
+      #home_section .home_intro .home_contact:hover {
+        cursor: pointer;
+        background: #81a1c1;
+        color: #d8dee9;
+        box-shadow: 0px 0px 25px 5px rgba(67, 76, 94, 0.3); }
   #home_section .home_avatar {
     display: flex;
     position: absolute;
-    left: 57em;
-    top: 20em;
-    width: 40em;
-    height: 40em;
+    left: 51%;
+    top: 110%;
+    width: 35em;
+    height: 35em;
     -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(black), to(rgba(0, 0, 0, 0)));
     mask-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0)); }
+
+#about_background {
+  z-index: -1;
+  align-items: center;
+  position: absolute;
+  top: 85em;
+  width: 100%;
+  height: 90em;
+  overflow: hidden; }
+  #about_background .about_rect_1 {
+    position: absolute;
+    width: 100%;
+    height: 100em;
+    border: 1px solid #d8dee9;
+    background: #d8dee9; }
+
+#about_section {
+  z-index: 1;
+  display: flex;
+  position: absolute;
+  top: 100em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 98%; }
 
 /*# sourceMappingURL=style.css.map */
