@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta author="Tim Lacault" />
+    <meta description="Developer Portfolio" />
+    <meta keywords="software, developer, dev, portfolio, tim, lacault, Tim Lacault ,tim lacault" />
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.min.css">
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="images/favicon/browserconfig.xml">
+
+    <title>Tim Lacault | Portfolio </title>
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav-logo">
+            <a href="index.html">
+                <img src="images/logo.png">
+            </a>
+        </div>
+
+        <ul class="nav-links">
+            <li class="nav_link"><a href="#" onclick="navigateTo('index.html'); return false">Home</a></li>
+            <li id="link_feature" class="nav_link"><a href="#" onclick="navigateTo('index.html'); return false">Feature</a></li>
+            <li id="link_about" class="nav_link"><a href="#" onclick="navigateTo('index.html'); return false">About</a></li>
+        </ul>
+        <button class="btn"><span class="blur"></span>Contact Me</button>
+    </nav>
+
+    <header class="container">
+        <div class="content">
+            <span class="blur"></span>
+            <h4>BUILD SOFTWARE LIKE A PRO</h4>
+            <!-- <H1>Hey I'm Tim,<br><span>Software Developer</span></H1> -->
+            <H1>Hey I'm <span>Tim</span> ,<br>Software Developer</H1>
+            <p>
+                Passionate Computer Science student with a solid 4-year programming background and completion of a
+                5-month development internship. I love finding elegant solutions to complex problems. Continuously
+                engaging in various projects to enhance my skills and expand my knowledge in software development.
+            </p>
+            <button class="btn">Get Started</button>
+        </div>
+        <div class="image">
+            <img src="images/header.gif">
+        </div>
+    </header>
+
+    <section class="container">
+        <h2 class="header">WORKING WITH ME<span class="blur"></span></h2>
+        <div class="features">
+            <div class="card">
+                <span><i class="ri-code-s-slash-line"></i></span>
+                <h4>Programming</h4>
+                <p>
+                    Take a look at some projects I've worked on. You can find more on my
+                    GitHub !
+                </p>
+                <a href="projects.html">Projects <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <!-- <span class="blur"></span> -->
+                <span><i class="ri-bug-line"></i></span>
+                <h4>Fix your bugs</h4>
+                <p>
+                    You have any problem in your code ? Tell me, i will help you fix it.
+                </p>
+                <a href="#" onclick="navigateTo('index.html'); return false">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card">
+                <span><i class="ri-history-line"></i></span>
+                <h4>Another Feature</h4>
+                <p>
+                    Feature complete description, not too long, not too short.
+                </p>
+                <a href="#" onclick="navigateTo('index.html'); return false">Join Now <i class="ri-arrow-right-line"></i></a>
+            </div>
+            <div class="card" onclick="navigateTo('index.html'); return false">
+                <span><i class="ri-shake-hands-line"></i></span>
+                <h4>Cooperation</h4>
+                <p>
+                    Want to work together ? Send me a mail, i will respond as soon as possible !
+                </p>
+                <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+                <!-- <span class="blur"></span> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- <section class="container">
+        <h2 class="header"><span class="blur"></span>PROJECT PRICING PLANS</h2>
+        <p class="sub-header">
+            Our pricing plans come with various membership tiers, each tailored to cater to different projects and
+            class+ code types.
+        </p>
+        <div class="pricing">
+            <div class="card">
+                <div class="content">
+                    <h4>Basic Plan</h4>
+                    <h3>10€</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Smart coding plan
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        At home workouts
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Gold Plan</h4>
+                    <h3>50€</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Pro codes
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Smart coding plan
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        At home workouts
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+            <div class="card">
+                <div class="content">
+                    <h4>Diamond Plan</h4>
+                    <h3>100€</h3>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Elite Classes & Courses
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Pro codes
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Personal Coaching
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        Smart coding plan
+                    </p>
+                    <p>
+                        <i class="ri-checkbox-circle-line"></i>
+                        At home workouts
+                    </p>
+                </div>
+                <button class="btn">Join Now</button>
+            </div>
+        </div>
+    </section> -->
+
+    <footer class="container">
+        <span class="blur"></span>
+        <div class="column">
+            <div class="logo">
+                <img src="images/logo.png">
+            </div>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <div class="socials">
+                <a href="https://github.com/TLacault" target="_blank"><i class="ri-github-line"></i></a>
+                <a href="https://www.linkedin.com/in/tim-lacault/" target="_blank"><i class="ri-linkedin-line"></i></a>
+                <a href="mailto:contact@timlacault.dev" target="_blank"><i class="ri-mail-line"></i></a>
+            </div>
+        </div>
+        <div class="column">
+            <h4>Company</h4>
+            <a href="#">Business</a>
+            <a href="#">Partnership</a>
+            <a href="#">Network</a>
+        </div>
+        <div class="column">
+            <h4>About Me</h4>
+            <a href="#">Blogs</a>
+            <a href="#">Channels</a>
+            <a href="#">Sponsor</a>
+        </div>
+        <div class="column">
+            <h4>Contact</h4>
+            <a href="#">Contact Me</a>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms & Conditions</a>
+        </div>
+    </footer>
+
+    <div class="copyright">
+        Copyright © 2024 Tim Lacault. All Rights Reserved.
+        <span class="blur"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+/* HEADER */
+
+header {
+    position: relative;
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    gap: 2rem;
+}
+
+header .content h4 {
+    margin-bottom: 1rem;
+    color: var(--grey);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+header .content h1 {
+    color: var(--light);
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+}
+
+header .content h1 span {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px var(--light);
+}
+
+header .content p {
+    margin-bottom: 2rem;
+    color: var(--grey);
+}
+
+header .image {
+    position: relative;
+}
+
+header .image::before {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 20rem;
+    color: var(--blue);
+    opacity: 0.2;
+    z-index: -100;
+}
+
+header .image img {
+    max-width: 600px;
+    margin: auto;
+}
+
+
+/* FEATURES */
+
+.features {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.features .card {
+    background-color: var(--card);
+    padding: 1.5rem;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.features .card:hover {
+    background-color: var(--card-hover);
+    border-color: var(--light);
+}
+
+.features .card span {
+    display: inline-block;
+    background-color: var(--blue-darker);
+    padding: 2px 9px;
+    margin-bottom: 1rem;
+    font-size: 1.75rem;
+    color: var(--light);
+    border-radius: 5px;
+}
+
+.features .card h4 {
+    margin-bottom: 0.5rem;
+    color: var(--light);
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.features .card p {
+    color: var(--grey);
+    margin-bottom: 1rem;
+}
+
+.features .card a {
+    color: var(--light);
+    transition: all 0.3s ease;
+}
+
+.features .card a:hover {
+    color: var(--blue);
+}
+
+/* PRICING */
+
+.sub-header {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    color: var(--grey);
+}
+
+.pricing {
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.pricing .card {
+    padding: 3rem 2rem;
+    background-color: var(--card);
+    display: flex;
+    flex-direction: column;
+    border: 2px solid transparent;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+    background-color: var(--card-hover);
+    border-color: var(--light);
+}
+
+.pricing .card .content {
+    flex: 1;
+    margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+    margin-bottom: 1rem;
+    color: var(--light);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.pricing .card h3 {
+    color: var(--light);
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    font-weight: 600;
+    border-bottom: 2px dashed var(--light);
+}
+
+.pricing .card p {
+    color: var(--light);
+    margin-bottom: 0.75rem;
+}
+
+.pricing .card p i {
+    color: var(--grey);
+    font-size: 1.2rem;
+    margin-right: 0.3rem;
+}
+
+.pricing .card button {
+    color: var(--light);
+    background-color: transparent;
+    border: 2px solid var(--light);
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.pricing .card button:hover {
+    background-color: var(--blue);
+    border-color: var(--blue);
+}
+
+/* RESPONSIVE */
+
+@media (width < 900px) {
+    header {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    header .image {
+        grid-area: 1/1/2/2;
+    }
+
+    .features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 600px) {
+    header .image::before {
+        display: none;
+    }
+
+    .features {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .pricing {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
