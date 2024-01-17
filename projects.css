@@ -15,14 +15,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+
     padding: 1.5rem;
-    
     color: var(--light);
     border: 2px solid transparent;
     border-radius: 15px;
-    transition: all 0.3s ease;
     background-color: var(--card);
     cursor: pointer;
+    transition: all 0.3s ease;
 }
 
 .skills .card:hover {
@@ -30,14 +30,13 @@
     border-color: var(--blue);
 }
 
-
 .skill_filter {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1rem;
     margin-bottom: 2rem;
-
+    /* transition: all 1s ease; */
 }
 
 .filter {
@@ -47,13 +46,13 @@
     cursor: pointer;
     transition: all 0.3s ease;
     color: var(--light);
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--transparent);
     border: 2px solid var(--light);
 }
 
 /* Define the hover effect for filter buttons */
 .filter:not(.selected) {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: var(--transparent);
     border-color: var(--light);
 }
 
@@ -79,5 +78,17 @@
 @media (width < 700px) {
     .skills {
         grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (width < 600px) {
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (width < 400px) {
+    .skills {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
